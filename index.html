@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,89 +9,110 @@
   <link rel="stylesheet" href="./css/styles.css">
   <title>DuaPass</title>
 </head>
+
 <body>
 
-  <!-- Cabecera -->
+  <!-- Header -->
 
-<header class="header">
-  <nav class="nav">
-    <a href="./index.html">
-      <h1>DuaPass</h1>
-    </a>
-  </nav>
-</header>
+  <header class="header">
+    <nav class="nav">
+      <a href="./index.html">
+        <h1><i class='bx bxs-lock'></i><span>Dua</span>Pass</h1>
+      </a>
+    </nav>
+  </header>
 
-<!-- main -->
+  <div class="container">    
 
-<main class="main">
+    <!-- main -->
 
-  <section class="information">
-    <div class="info__container">
-      <h2>Crea contraseñas seguras y personalizadas en segundos. Protege tus cuentas con nuestro generador fácil de usar.</h2>
-      <p>Un potente generador de contraseñas robustas para proteger tus cuentas en Internet.</p>
-    </div>
-  </section>
+    <main class="main">
 
-  <section class="generator">
-    <div class="generator__container">
-      <div class="generator__container--title title">        
-        <h2>Generador de Contraseñas</h2>
-      </div>
-      <div class="generator__container--view view">
-        <p id="view__output"><span>Click en botón generar</span></p>
-      </div>
-
-      <div class="generator__container--length length">
-        <span>Longitud</span>
-        <input type="range" value="8" min="1" max="60" class="length__slider"
-        oninput="this.nextElementSibling.valu = this.value" id="length__slider">
-        <output for="length__slider">8</output>
-      </div>
-
-      <div class="generator__container--options options">
-        <div class="options__items">
-          <label for="options__items--letters">Usar Letras</label>
-          <input type="checkbox" id="options__items--letters">
+      <section class="information">
+        <div class="info__container">
+          <p class="info__container--title">Crea contraseñas seguras y personalizadas en segundos. Protege tus cuentas con nuestro generador fácil de usar.</p>
+          <p class="info__container--description">Un potente generador de contraseñas robustas para proteger tus cuentas en Internet.</p>
         </div>
-        <div class="options__items">
-          <label for="options__items--numbers">Usar Números</label>
-          <input type="checkbox" id="options__items--numbers">
-        </div>
-        <div class="options__items">
-          <label for="options__items--symbols">Usar Símbolos</label>
-          <input type="checkbox" id="options__items--symbols">
-        </div>
-      </div>
+      </section>
 
-      <div class="generator__container--buttons">
-        <button class="button__copy">
-          Copiar <i class='bx bxs-copy'></i>
-        </button>
-        <button class="button__update">
-          Generar <i class='bx bx-revision'></i>
-        </button>
-      </div>
-    </div>
-  </section>  
-</main>
+      <section class="generator">
+        <div class="generator__container--title title">
+          <h2>Generador de Contraseñas</h2>
+        </div>
 
-<footer class="footer">
-  <div class="copyright">
-    <i class='bx bx-copyright' ></i>
-    <p>Copyright PierreDev - 2024</p>
-    <span>|</span>
+        <div class="generator__container">
+
+          <div class="generator__container--length">
+            <label>Longitud</label>
+            <div class="length">
+              <input type="range" value="8" min="1" max="60" class="length__slider"
+                oninput="this.nextElementSibling.value = this.value" id="length__slider">
+              <output for="length__slider">8</output>
+            </div>
+          </div>
+
+          <div class="generator__container--options options">
+
+            <div class="options__items">
+              <label for="options__items--letters">Usar Letras</label>
+              <input type="checkbox" id="options__items--letters">
+            </div>
+            <div class="options__items">
+              <label for="options__items--numbers">Usar Números</label>
+              <input type="checkbox" id="options__items--numbers">
+            </div>
+            <div class="options__items">
+              <label for="options__items--symbols">Usar Símbolos</label>
+              <input type="checkbox" id="options__items--symbols">
+            </div>
+
+          </div>
+
+          <div class="generator__container--view view">
+            <p id="view__output"><span>Click en botón generar</span></p>
+          </div>
+
+          <div class="generator__container--buttons">
+
+            <button class="button__copy">
+              Copiar <i class='bx bxs-copy'></i>
+            </button>
+            <button class="button__update">
+              Generar <i class='bx bx-revision'></i>
+            </button>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+
+      <span class="span"></span>
+
+      <div class="footer--container">
+
+        <div class="copyright">
+          <i class='bx bx-copyright'></i>
+          <p>Copyright PierreDev - 2024</p>
+          <span>|</span>
+        </div>
+        <div class="social">
+          <a class="social__container" href="https://github.com/JeanPi22?tab=repositories" target="_blank">
+            <i class='bx bxl-github'></i>
+            <p class="social__container--info">GitHub</p>
+          </a>
+          <a class="social__container" href="https://www.linkedin.com/in/jean-pierre-pe%C3%B1a-6672572b6/"
+            target="_blank">
+            <i class='bx bxl-linkedin-square'></i>
+            <p class="social__container--info">LinkedIn</p>
+          </a>
+        </div>
+
+      </div>
+    </footer>
   </div>
-  <div class="social">
-    <a class="social__container" href="https://github.com/JeanPi22?tab=repositories" target="_blank">
-      <i class='bx bxl-github' ></i>
-      <p class="social__container--info">GitHub</p>
-    </a>
-    <a class="social__container" href="https://www.linkedin.com/in/jean-pierre-pe%C3%B1a-6672572b6/" target="_blank">
-      <i class='bx bxl-linkedin-square' ></i>
-      <p class="social__container--info">LinkedIn</p>
-    </a>
-  </div>
-</footer>
-  
+
 </body>
+
 </html>
